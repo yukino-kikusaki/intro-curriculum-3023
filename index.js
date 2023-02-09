@@ -12,10 +12,10 @@ const server = http.createServer(basic.check((req, res) => {
     router.route(req, res);
   }))
   .on('error', e => {
-  console.error('Server Error', e);
+    console.error('Server Error', e);
   })
   .on('clientError', e => {
-  console.error('Client Error', e);
+    console.error('Client Error', e);
   });
 
 const port = 8000;
